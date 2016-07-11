@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://rtaonline.net'),
+    'url' => env('APP_URL', 'http://myspace.net'),
 
     /*
     |--------------------------------------------------------------------------
@@ -163,7 +163,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        Barryvdh\Cors\ServiceProvider::class
+        Barryvdh\Cors\ServiceProvider::class,
+
+        Adldap\Laravel\AdldapServiceProvider::class,
+        Adldap\Laravel\AdldapAuthServiceProvider::class,
+        
     ],
 
     /*
@@ -210,6 +214,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Authorizer' => LucaDegasperi\OAuth2Server\Facades\Authorizer::class,
+        'Adldap' => Adldap\Laravel\Facades\Adldap::class
 
     ],
 

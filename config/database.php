@@ -75,7 +75,7 @@ return [
             'password' => env('DB_PASSWORD', 'postgres'),
             'charset' => 'utf8',
             'prefix' => '',
-            'schema' => 'user_management',
+            'schema' => env('DB_DATABASE_SCHEMA', 'user_management'),
         ],
 
     ],

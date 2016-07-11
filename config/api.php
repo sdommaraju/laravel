@@ -32,7 +32,7 @@ return [
     |
     */
 
-    'subtype' => env('API_SUBTYPE', 'rta'),
+    'subtype' => env('API_SUBTYPE', 'myspace'),
 
     /*
     |--------------------------------------------------------------------------

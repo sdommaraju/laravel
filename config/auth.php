@@ -67,9 +67,12 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
+            'model' => App\Http\Models\User::class,
+        ],
+        'adldap' => [
+            'driver' => 'adldap',
             'model' => App\User::class,
         ],
-
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
